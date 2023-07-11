@@ -131,32 +131,26 @@ h-secondary{
 .center{
     text-align: center;
 }
-@media (532px<= width <=730px){
+@media ( width <=730px){
     #home{
         padding: 3px 20px;
     }
     #navbar{
         flex-direction: column;
     }
-}
-@media ( width <=532px) {
-    #home{
-        padding: 3px 20px;
-    }
-    #navbar{
-        flex-direction: column;
-    }
-    #navbar ul{
-        margin: 6px 0px;
-    }
-    #navbar ul li{
-        font-size: 0.9rem;
-    }
-    #navbar ul li a{
-        padding: 5px 10px;
-    }
-    .h-primary{
-        padding: 12px 0px;
+    @media ( width <=532px) {
+        #navbar ul{
+            margin: 6px 0px;
+        }
+        #navbar ul li{
+            font-size: 0.9rem;
+        }
+        #navbar ul li a{
+            padding: 5px 10px;
+        }
+        .h-primary{
+            padding: 12px 0px;
+        }   
     }
     @media (width<= 420px){
         .h-primary{
@@ -166,5 +160,5 @@ h-secondary{
         #home p{
             font-size: 0.7rem;
         }
-    }   
+    }
 }
