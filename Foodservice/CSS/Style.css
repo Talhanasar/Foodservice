@@ -160,5 +160,8 @@ h-secondary{
         #home p{
             font-size: 0.7rem;
         }
+        .size{
+            font-size: 0.5rem;
+        }
     }
 }
