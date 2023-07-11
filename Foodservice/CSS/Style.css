@@ -35,7 +35,6 @@ html{
     font-family: 'Baloo Bhai';
 }
 #navbar ul li{
-    /* color: white; */
     list-style: none;
     font-size: 1.2rem;
 }
@@ -61,7 +60,7 @@ html{
 }
 #home::before{
     content: "";
-    background: url('../Image/img1.jpg');
+    background: url('../Image/img1.jpg') no-repeat center/cover;
     height: 104vh;
     width: 100%;
     top: 0px;
@@ -131,4 +130,39 @@ h-secondary{
 }
 .center{
     text-align: center;
+}
+@media ( width <=532px) {
+    #home{
+        padding: 3px 20px;
+    }
+    #navbar{
+        flex-direction: column;
+    }
+    #navbar ul{
+        margin: 6px 0px;
+    }
+    #navbar ul li{
+        font-size: 0.9rem;
+    }
+    #navbar ul li a{
+        padding: 5px 10px;
+    }
+    @media (width<= 400px){
+        .h-primary{
+            font-size: 1.9rem;
+            padding: 12px;
+        }
+        #home p{
+            font-size: 0.9rem;
+        }
+    }   
+}
+
+@media  ( 532px<= width <=730){
+    #home{
+        padding: 3px 20px;
+    }
+    #navbar{
+        flex-direction: column;
+    }
 }
