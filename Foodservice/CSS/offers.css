@@ -61,8 +61,9 @@
 }
 #offers{
     display: flex;
+    flex-wrap: wrap;
 }
-.box{
+#B1 ,#B2{
     border: 1px solid black;
     margin: 59px 24px;
 }
@@ -70,4 +71,40 @@
     display: block;
     height: 400px;
     width: 350px;
+}
+@media (width <=775px){
+    #offers::before{
+        background: url('../Image/offer2.jpg') no-repeat center center/cover;
+    }
+    #B1{
+        margin-bottom: 10px;
+    }
+    #B2{
+        margin-top: 10px;
+    }
+    #offers::before{
+        height: 130vh;
+    }
+    @media (width <=644px){
+        #navbar{
+            flex-direction: column;
+        }
+        #navbar ul li{
+            font-size: 0.9rem;
+        }
+        #navbar ul li a{
+            padding: 5px 10px;
+        }
+        #offers{
+            flex-direction: column;
+        }
+        .box{
+            height: 300px;
+            width: 250px;
+        }
+        .box img{
+            height: 300px;
+            width: 250px;
+        }
+    }
 }
