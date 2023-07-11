@@ -90,9 +90,13 @@
     @media (width <= 423px){
         #about .box{
             font-size: 0.9rem;
-            margin-top: 280px;
+            color: white;
+            margin-top: 300px;
             height: 230px;
             width: 330px;
+        }
+        #about::before{
+            height: 109vh;
         }
     }
 }
