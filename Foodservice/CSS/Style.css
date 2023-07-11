@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    text-decoration: none;
 }
 html{
     scroll-behavior: smooth;
@@ -106,6 +107,25 @@ html{
 footer{
     background-color: black;
     color: white;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.icon i{
+    margin-top: 4px;
+}
+span a{
+    color: white;
+    margin-left: 5px;
+}
+span a:hover{
+    color: grey;
+}
+.size{
+    position: relative;
+    bottom: -8px;
 }
 /* utility classes */
 .h-primary{
