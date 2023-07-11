@@ -155,6 +155,9 @@ h-secondary{
     #navbar ul li a{
         padding: 5px 10px;
     }
+    .h-primary{
+        padding: 12px 0px;
+    }
     @media (width<= 420px){
         .h-primary{
             font-size: 1.8rem;
