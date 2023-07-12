@@ -63,9 +63,16 @@
     display: flex;
     flex-wrap: wrap;
 }
+.slide{
+    background-color: yellow;
+    color: red;
+    margin-top: 12px;
+    padding: 7px 0px;
+}
+
 #B1 ,#B2{
     border: 1px solid black;
-    margin: 59px 24px;
+    margin: 40px 24px;
 }
 .box img{
     display: block;
