@@ -113,6 +113,9 @@ footer{
     align-items: center;
     justify-content: center;
 }
+.down{
+    margin-left: 8px;
+}
 .icon i{
     margin-top: 4px;
 }
@@ -181,7 +184,7 @@ h-secondary{
             font-size: 0.7rem;
         }
         .size{
-            font-size: 0.5rem;
+            font-size: 0.7rem;
         }
     }
 }
