@@ -119,7 +119,10 @@ footer{
 .icon i{
     margin-top: 4px;
 }
-span a{
+.mail span{
+    cursor: text;
+}
+span a,.mail span{
     color: white;
     margin-left: 5px;
 }
