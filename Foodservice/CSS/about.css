@@ -81,17 +81,18 @@
     }
     @media (width <=532px){
         #navbar ul li{
-            font-size: 0.8rem;
+            font-size: 0.85rem;
         }
         #navbar ul li a{
             padding: 5px 10px;
         }
     }
-    @media (width <= 423px){
+    @media (width <= 430px){
         #about .box{
             font-size: 0.9rem;
             color: white;
-            margin-top: 300px;
+            position: absolute;
+            bottom: 0px;
             height: 230px;
             width: 330px;
         }
