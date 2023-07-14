@@ -9,7 +9,7 @@ html{
 #navbar{
     display: flex;
     align-items: center;
-    position: relative;
+    position: sticky;
     top: 0px;
 }
 #navbar::before{
@@ -21,7 +21,7 @@ html{
     height: 100%;
     width: 100%;
     z-index: -1;
-    opacity: 1.3;
+    opacity: 0.4;
 }
 #logo img{
     height: 40px;
