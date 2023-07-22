@@ -66,15 +66,12 @@
 }
 
 .image-slide1{
-    /* border: 2px solid red; */
     background: url(../Image/logo2.jpg) no-repeat center center/100% 100%;
     height: auto;
     width: 50%;
 }
 
 .box {
-    /* border: 1px solid black; */
-    align-items: center;
     height: 80%;
     width: 40%;
     margin: 40px 12px;
@@ -128,6 +125,7 @@
     display: flex;
     margin: 12px 22px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .slide3 h1{
     text-align: center;
@@ -264,4 +262,121 @@ span a{
 }
 .linkedin:hover{
     color: white;
+}
+
+/* Css for responsive website */
+@media ( width<=700px) {
+    .image-slide2{
+        height: 40%;
+        width: 45%;
+    }
+    .box-info p {
+        padding: 12px 0px;
+        font-size: 0.8rem;
+    }
+    .box-info h1 {
+        font-size: 1.4rem;
+    }
+    .slide2 {
+        height: 68vh;
+    }
+    .slide1 {
+        height: 65vh;
+    }
+    .box h2 {
+        font-size: 2rem;
+    }
+    .box p {
+        font-size: 1rem;
+    }
+    .slide3 {
+        height: 42vh;
+    }
+    .youtube, .facebook, .instagram{
+        height: 5vh;
+        margin: 6px 20px;
+    }
+    .instagram #img, .facebook #img , .youtube #img{
+        height: 4vh;
+        width: 30%;
+    }
+    .developer {
+        height: 28vh;
+    }
+    .logo img {
+        height: 35px;
+        width: 51%;
+    }
+    @media (width<=460px){
+        #navbar {
+            flex-direction: column;
+        }
+        .slide1 {
+            height: 38vh;
+        }
+        .box{
+            padding: 7px 7px;
+        }
+        .box p {
+            font-size: 0.6rem;
+        }
+        .box h2 {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+        }
+        #navbar ul li{
+            font-size: 0.8rem;
+        }
+        #navbar ul li a{
+            padding: 5px 8px;
+        }
+        .box {
+            height: 74%;
+        }
+        .slide2 {
+            height: 47vh;
+        }
+        .box-info h1 {
+            font-size: 1rem;
+        }
+        .box-info p {
+            padding: 8px 0px;
+            font-size: 0.5rem;
+        }
+        .image-slide2 {
+            height: 37%;
+            width: 51%;
+        }
+        .slide3 h1 {
+            font-size: 1.8rem;
+            margin-bottom: 90px;
+        }
+        .slide3 {
+            height: 37vh;
+        }
+        .youtube, .facebook, .instagram {
+            height: 5vh;
+            margin: 13px 16px;
+            width: 30%;
+        }
+        span a{
+            font-size: 0.5rem;
+        }
+        .developer {
+            height: 23vh;
+        }
+        .logo img {
+            height: 28px;
+            margin: 13px 0px;
+        }
+        .follow{
+            margin: 30px 3px;
+        }
+        .developer h1{
+            font-size: 1.5rem;
+        }
+        .developer p{
+            font-size: 0.5rem;
+        }
+    }
 }
