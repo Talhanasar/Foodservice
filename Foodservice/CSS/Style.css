@@ -1,18 +1,21 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     text-decoration: none;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
-#navbar{
+
+#navbar {
     display: flex;
     align-items: center;
     position: sticky;
     top: 0px;
 }
-#navbar::before{
+
+#navbar::before {
     content: "";
     background-color: black;
     position: absolute;
@@ -23,23 +26,27 @@ html{
     z-index: -1;
     opacity: 0.4;
 }
-#logo img{
+
+#logo img {
     height: 40px;
     width: 38px;
     background-color: white;
     border-radius: 25px;
     margin: 11px 37px;
 }
-#navbar ul{
+
+#navbar ul {
     display: flex;
     margin: 6px 28px;
     font-family: 'Baloo Bhai';
 }
-#navbar ul li{
+
+#navbar ul li {
     list-style: none;
     font-size: 1.2rem;
 }
-#navbar ul li a{
+
+#navbar ul li a {
     color: white;
     display: block;
     padding: 8px 15px;
@@ -47,11 +54,14 @@ html{
     text-decoration: none;
     margin: 0px 12px;
 }
-#navbar ul li a:hover, #navbar ul li a.active{
+
+#navbar ul li a:hover,
+#navbar ul li .active {
     color: black;
     background-color: white;
 }
-#home{
+
+#home {
     display: flex;
     flex-direction: column;
     padding: 3px 200px;
@@ -59,7 +69,8 @@ html{
     justify-content: center;
     align-items: center;
 }
-#home::before{
+
+#home::before {
     content: "";
     background: url('../Image/img1.jpg') no-repeat center/cover;
     height: 104vh;
@@ -70,29 +81,34 @@ html{
     z-index: -1;
     opacity: 0.75;
 }
-#home h1{
+
+#home h1 {
     color: white;
     text-align: center;
     font-family: 'Bree Serif', serif;
 }
-#home p{
+
+#home p {
     color: white;
     text-align: center;
     font-size: 1.5rem;
     font-family: 'Bree Serif', serif;
 }
+
 /* Items Section */
-#services{
+#services {
     margin: 0px;
     background-color: aliceblue;
 }
-#items{
+
+#items {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
 }
-#items .box{
+
+#items .box {
     border: 2px solid red;
     margin: 22px 12px;
     border-radius: 10px;
@@ -100,11 +116,13 @@ html{
     background-color: #F1E39C;
     box-shadow: 7px 10px 7px black;
 }
-#items .box img{
+
+#items .box img {
     height: 300px;
     display: block;
 }
-footer{
+
+footer {
     background-color: black;
     color: white;
     height: 100px;
@@ -113,38 +131,48 @@ footer{
     align-items: center;
     justify-content: center;
 }
-.down{
+
+.down {
     margin-left: 8px;
 }
-.icon i{
+
+.icon i {
     margin-top: 4px;
 }
-.mail span{
+
+.mail span {
     cursor: text;
 }
-span a,.mail span{
+
+span a,
+.mail span {
     color: white;
     margin-left: 5px;
 }
-span a:hover{
+
+span a:hover {
     color: grey;
 }
-.size{
+
+.size {
     position: relative;
     bottom: -8px;
 }
+
 /* utility classes */
-.h-primary{
+.h-primary {
     font-family: 'Bree Serif', serif;
     font-size: 2.8rem;
     padding: 12px;
 }
-h-secondary{
+
+h-secondary {
     font-family: 'Bree Serif', serif;
     font-size: 1.5rem;
     padding: 12px;
 }
-.btn{
+
+.btn {
     padding: 6px 20px;
     border: 2px solid white;
     background-color: #eec193;
@@ -154,39 +182,49 @@ h-secondary{
     margin: 17px;
     cursor: pointer;
 }
-.center{
+
+.center {
     text-align: center;
 }
-@media ( width <=730px){
-    #home{
+
+@media (width <=730px) {
+    #home {
         padding: 3px 20px;
     }
-    #navbar{
+
+    #navbar {
         flex-direction: column;
     }
-    @media ( width <=532px) {
-        #navbar ul{
+
+    @media (width <=532px) {
+        #navbar ul {
             margin: 6px 0px;
         }
-        #navbar ul li{
+
+        #navbar ul li {
             font-size: 0.9rem;
         }
-        #navbar ul li a{
+
+        #navbar ul li a {
             padding: 5px 10px;
         }
-        .h-primary{
+
+        .h-primary {
             padding: 12px 0px;
-        }   
+        }
     }
-    @media (width<= 420px){
-        .h-primary{
+
+    @media (width<=420px) {
+        .h-primary {
             font-size: 1.8rem;
             padding: 0px;
         }
-        #home p{
+
+        #home p {
             font-size: 0.7rem;
         }
-        .size{
+
+        .size {
             font-size: 0.7rem;
         }
     }

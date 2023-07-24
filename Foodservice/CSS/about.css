@@ -51,7 +51,6 @@
     text-decoration: none;
     margin: 0px 12px;
 }
-
 #navbar ul li a:hover,
 #navbar ul li a.active {
     color: black;
