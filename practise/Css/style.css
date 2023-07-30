@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.full{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #081b29;
+}
+.inside-box{
+    border: 2px solid #0ef;
+    position: relative;
+    height: 450px;
+    width: 750px;
+    background: transparent;
+}
+.inside-box .left{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
