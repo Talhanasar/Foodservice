@@ -1,0 +1,117 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#logo img{
+    height: 40px;
+    width: 38px;
+    background-color: white;
+    border-radius: 25px;
+    margin: 11px 37px;
+}
+#navbar ul{
+    display: flex;
+    margin: 6px 28px;
+    font-family: 'Baloo Bhai';
+}
+#navbar ul li{
+    /* color: white; */
+    list-style: none;
+    font-size: 1.2rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 8px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    margin: 0px 12px;
+}
+#navbar ul li a:hover, #navbar ul li a.active{
+    color: black;
+    background-color: white;
+}
+#offers::before{
+    content: "";
+    background: url('../Image/offer1.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 117vh;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.76;
+}
+#offers{
+    display: flex;
+    flex-wrap: wrap;
+}
+.slide{
+    background-color: yellow;
+    color: red;
+    margin-top: 12px;
+    padding: 7px 0px;
+}
+
+#B1 ,#B2{
+    border: 1px solid black;
+    margin: 40px 24px;
+}
+.box img{
+    display: block;
+    height: 400px;
+    width: 350px;
+}
+@media (width <=775px){
+    #offers::before{
+        background: url('../Image/offer2.jpg') no-repeat center center/cover;
+    }
+    #B1{
+        margin-bottom: 10px;
+    }
+    #B2{
+        margin-top: 10px;
+    }
+    #offers::before{
+        height: 130vh;
+    }
+    @media (width <=644px){
+        #navbar{
+            flex-direction: column;
+        }
+        #navbar ul li{
+            font-size: 0.9rem;
+        }
+        #navbar ul li a{
+            padding: 5px 10px;
+        }
+        #offers{
+            flex-direction: column;
+        }
+        .box{
+            height: 300px;
+            width: 250px;
+        }
+        .box img{
+            height: 300px;
+            width: 250px;
+        }
+    }
+}
